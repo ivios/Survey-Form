@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 id="title">Website Design Request</h1>
+        <p id="description">Fill out the form to request a design</p>
+        <hr style="width: 90%; color:grey;">
+
+        <form id="survey-form">
+            <div class="row">
+                <div class="left">
+                    <label for="name" id="name-label">Name</label>
+                </div>
+                <div class="right">
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <label for="email" id="email-label">E-mail</label>
+                </div>
+                <div class="right">
+                    <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                           placeholder="Ex: myname@example.com" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <label for="phone" id="phone-label">Phone Number</label>
+                </div>
+                <div class="right">
+                    <input type="tel" id="phone" required placeholder="Enter your phone number" maxlength="15"
+                           required>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="left">
+                    <label for="dropdown" id="dropdown-label">Type of Website You Need?</label>
+                </div>
+                <div class="right">
+                    <select id="dropdown">
+                        <option></option>
+                        <option>Personal</option>
+                        <option>Educational</option>
+                        <option>Sport</option>
+                        <option>Food, Restaurant</option>
+                        <option>Local Bussiness</option>
+                        <option>Small Business</option>
+                        <option>Medium Business</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <label for="radio-group" id="radio-label">Type of Business</label>
+                </div>
+                <div class="right>">
+                    <fieldset id="radio-group">
+                        <label><input type="radio" value="Technology" name="radio-group">Technology</label><br>
+                        <label><input type="radio" value="Food" name="radio-group">Food</label><br>
+                        <label><input type="radio" value="Beasuty" name="radio-group">Beasuty</label><br>
+                        <label><input type="radio" value="Finance" name="radio-group">Finance</label>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <label for="checkbox-group" id="checkbox-label">Choose Items for the Navigation Bar</label>
+                </div>
+                <div class="right>">
+                    <fieldset id="checkbox-group">
+                        <label><input type="checkbox" value="About" name="checkbox-group">About</label><br>
+                        <label><input type="checkbox" value="FAQ" name="checkbox-group">FAQ</label><br>
+                        <label><input type="checkbox" value="User_Guide" name="checkbox-group">User Guide</label><br>
+                        <label><input type="checkbox" value="Forum" name="checkbox-group">Forum</label><br>
+                        <label><input type="checkbox" value="Blog" name="checkbox-group">Blog</label><br>
+                        <label><input type="checkbox" value="Pricing" name="checkbox-group">Pricing</label>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <label for="number" id="number-label">Number of pages</label>
+                </div>
+                <div class="right">
+                    <input type="number" id="number" required placeholder="Pages" min="1" max="100">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <label for="comment" id="comment-label">Additional Comments</label>
+                </div>
+                <div class="right">
+                    <textarea id="comment" style="height:100px; border-style:hidden;"></textarea>
+                </div>
+            </div>
+
+            <hr style="width: 90%; color:grey;">
+            <div class="row">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
